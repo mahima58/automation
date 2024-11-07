@@ -12,6 +12,7 @@ describe('Create Purchase Order after Login', () => {
       cy.get('#Password').type('@mahima123');
       cy.get('.btn').click();
       cy.wait(3000);
+    //   cy.wait(3000);
       // Ensure login was successful
       cy.url().should('be.equal', 'https://staging.soorisolutions.com.np/purchase-order');
       cy.get('.row > :nth-child(2) > .button-container > .btn').click();
