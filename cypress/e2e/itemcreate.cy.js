@@ -24,7 +24,7 @@ describe('Create new item', () => {
         cy.get('.css-1hwfws3').eq(4).click();//subcategory
         cy.get('.css-1hwfws3').eq(4).type('Masala B');
         cy.wait(3000);
-        cy.get('.css-26l3qy-menu').eq(0).contains('Masala B').click();
+        cy.get('.css-11unzgr').contains('Masala B').click();
         cy.get('.css-1hwfws3').eq(5).click();//unit
         cy.get('#react-select-11-option-4').click();
         cy.get('.css-1hwfws3').eq(6).click();//type
