@@ -54,7 +54,7 @@ describe('Create Customer Order', () => {
         // Navigate to create order page
         cy.get('#customer-order-tab').click();
         cy.get('.btn.create-button').click();
-
+        cy.wait(3000);
         // Select initial options
         cy.get('.css-tlfecz-indicatorContainer').eq(4).click();
         cy.get('#react-select-14-option-0').click();
